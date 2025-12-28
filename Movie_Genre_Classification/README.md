@@ -27,7 +27,7 @@ The following supervised learning models are trained and evaluated:
 Each model is trained independently and saved as a serialized artifact for inference.
 
 🗂️ Project Directory Structure
-
+```
 Movie_Genre_Classification/
 │
 ├── artifacts/
@@ -65,7 +65,7 @@ Movie_Genre_Classification/
 │
 ├── requirements.txt               # Project dependencies
 └── README.md                      # Project documentation
-
+```
 🔍 Core Technical Components
 
 1️⃣ Data Processing
@@ -114,27 +114,27 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 2️⃣ Install Dependencies
 
-pip install -r requirements.txt
+*pip install -r requirements.txt*
 
 ▶️ How to Run the Project
 
 Train Models:
 
-python models/train_logistic.py
-python models/train_naive_bayes.py
-python models/train_svm.py
+*python models/train_logistic.py*
+*python models/train_naive_bayes.py*
+*python models/train_svm.py*
 
 Compare Models:
 
-python evaluation/model_comparison.py
+*python evaluation/model_comparison.py*
 
 Perform Error Analysis:
 
-python evaluation/error_analysis.py
+*python evaluation/error_analysis.py*
 
 Run Inference:
 
-python inference/predict.py
+*python inference/predict.py*
 
 🧪 Technologies Used
 
