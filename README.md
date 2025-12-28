@@ -2,7 +2,7 @@
 
 This repository contains a collection of Machine Learning and Data Science projects developed as part of the CODSOFT Internship Program.
 Each task is implemented as an independent, well-structured project, following industry-standard practices for reproducibility, evaluation, and deployment readiness.
-
+```
 CODSOFT/
 │
 ├── Movie_Genre_Classification/   # Task 1 (Completed)
@@ -20,7 +20,7 @@ CODSOFT/
 ├── Task_5/   # Upcoming
 │
 └── README.md
-
+```
 ✅ Completed Tasks
 
 Task 1: Movie Genre Classification:
