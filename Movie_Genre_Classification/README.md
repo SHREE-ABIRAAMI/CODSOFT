@@ -144,7 +144,7 @@ Run Inference:
 * Scikit-learn
 * Joblib
 * Matplotlib
-* TQDM
+* Seaborn
 
 ⭐ Highlights for HR & HOD Review
 
