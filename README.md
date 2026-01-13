@@ -1,12 +1,11 @@
-
 ---
 
 # CODSOFT – Machine Learning Internship Projects
 
-This repository contains a curated set of **Machine Learning and Data Science projects** developed as part of the **CODSOFT Internship Program**.
-Each task is implemented as an **independent, end-to-end project**, following industry-aligned practices such as modular design, reproducibility, evaluation rigor, and explainability.
+This repository contains a curated set of **Machine Learning and Data Science projects** developed as part of the **CODSOFT Machine Learning Internship Program**.
 
-The repository is structured to scale cleanly as new tasks are added, while maintaining clarity and separation of concerns.
+Each task is implemented as an **independent, end-to-end ML project**, following **industry-aligned engineering practices** such as modular design, reproducibility, rigorous evaluation, and explainability.
+The repository demonstrates progressive skill development across **NLP, structured data modeling, and real-world ML workflows**.
 
 ---
 
@@ -22,7 +21,7 @@ CODSOFT/
 │   ├── evaluation/
 │   ├── inference/
 │   ├── utils/
-│   └── README.md
+|   └── requirements.txt
 │
 ├── Credit_Card_Fraud_Detection/       # Task 2 (Completed)
 │   ├── data/
@@ -31,27 +30,31 @@ CODSOFT/
 │   ├── training/
 │   ├── evaluation/
 │   ├── inference/
-│   ├── requirements.txt
-│   └── README.md
+│   └── requirements.txt
 │
-├── Task_3/                            # Planned
-├── Task_4/                            # Planned
-├── Task_5/                            # Planned
+├── Spam_SMS_Detection/                # Task 3 (Completed)
+│   ├── data/
+│   ├── utils/
+│   ├── training/
+│   ├── evaluation/
+│   ├── inference/
+│   ├── artifacts/
+│   └── requirements.txt
 │
 └── README.md
 ```
 
 ---
 
-## ✅ Completed Tasks
+## ✅ Completed Internship Tasks
 
 ### **Task 1: Movie Genre Classification**
 
-An end-to-end **NLP and Machine Learning pipeline** that predicts movie genres based on plot summaries.
+An end-to-end **NLP-based multi-class classification system** that predicts movie genres from plot summaries.
 
 **Key Highlights**
 
-* TF-IDF based feature extraction with n-grams
+* TF-IDF feature extraction with uni-grams and bi-grams
 * Multiple model training and comparison:
 
   * Naive Bayes
@@ -61,43 +64,64 @@ An end-to-end **NLP and Machine Learning pipeline** that predicts movie genres b
 * Explainable AI using linear model coefficients
 * Detailed error analysis and confusion matrix visualization
 
-Detailed documentation is available in:
-`Movie_Genre_Classification/README.md`
-
 ---
 
 ### **Task 2: Credit Card Fraud Detection**
 
-A complete **binary classification system** designed to detect fraudulent credit card transactions using structured transaction data.
+A complete **binary classification system** for detecting fraudulent credit card transactions using structured transactional data.
 
 **Key Highlights**
 
-* Robust data preprocessing using:
+* Robust data preprocessing:
 
   * StandardScaler for numerical features
   * OneHotEncoder for categorical features
-* Handling class imbalance through:
+* Class imbalance handling:
 
   * Stratified sampling
   * Class-weighted models
 * Model training and comparison:
 
   * Logistic Regression (interpretable baseline)
-  * Random Forest (non-linear ensemble model)
+  * Random Forest (non-linear ensemble)
 * Comprehensive evaluation:
 
-  * Classification report
-  * ROC-AUC score
-* Explainability module that identifies **top contributing features** behind individual predictions
-* Error analysis pipeline generating:
+  * Precision, Recall, F1-score
+  * ROC-AUC analysis
+* Explainability module identifying **top contributing features**
+* Error analysis pipeline capturing:
 
-  * Correct predictions
   * False positives
-  * False negatives (saved for post-model diagnostics)
-* Production-style inference script simulating real-world predictions on unseen data
+  * False negatives
+* Production-style inference pipeline for unseen data
 
-Detailed documentation is available in:
-`Credit_Card_Fraud_Detection/README.md`
+---
+
+### **Task 3: Spam SMS Detection**
+
+A production-oriented **text classification system** for detecting spam SMS messages using classical NLP and machine learning techniques.
+
+**Key Highlights**
+
+* Text preprocessing pipeline:
+
+  * Lowercasing
+  * URL, number, and punctuation removal
+* TF-IDF vectorization with uni-grams and bi-grams
+* Model training and comparison:
+
+  * Naive Bayes
+  * Logistic Regression
+  * Linear SVM (final selected model)
+* Detailed performance evaluation using:
+
+  * Accuracy
+  * Precision
+  * Recall
+  * F1-score
+* Error analysis module saving misclassified messages for inspection
+* Command-line inference script for real-time SMS prediction
+* Reusable vectorizer and model artifacts using Joblib
 
 ---
 
@@ -106,39 +130,36 @@ Detailed documentation is available in:
 * **Programming Language:** Python
 * **Core Libraries:** NumPy, Pandas
 * **Machine Learning:** Scikit-learn
-* **Data Preprocessing:** StandardScaler, OneHotEncoder
-* **Model Evaluation:** Classification metrics, ROC-AUC
-* **Explainability:** Model coefficient-based feature contribution analysis
+* **NLP:** TF-IDF Vectorization
+* **Model Evaluation:** Accuracy, Precision, Recall, F1-score, ROC-AUC
+* **Explainability:** Model coefficient–based feature analysis
 * **Model Persistence:** Joblib
 
 ---
 
 ## 📈 Engineering Practices Followed
 
-* Modular and scalable project structure
+* Modular and scalable repository structure
 * Clear separation of concerns:
 
   * Data loading
   * Feature engineering
-  * Training
+  * Model training
   * Evaluation
   * Inference
 * Reproducible experiments with saved artifacts
 * Explainability-first approach for model decisions
 * Clean, readable, and well-documented code
-* Repository layout designed for multi-project growth
+* Production-style inference workflows
+* Repository designed to support multiple independent ML projects
 
 ---
 
-## 🚀 Upcoming Tasks
+## 🎯 Internship Completion Status
 
-The following tasks will be added incrementally as part of the internship program:
-
-* **Task 3:** Planned
-* **Task 4:** Planned
-* **Task 5:** Planned
-
-Each task will maintain the same professional structure, evaluation depth, and documentation standard followed in Tasks 1 and 2.
+✔️ **All 3 tasks of the CODSOFT Machine Learning Internship have been successfully completed**
+✔️ Each task follows a professional, end-to-end ML pipeline
+✔️ The repository reflects real-world ML engineering standards rather than academic demos
 
 ---
 
@@ -146,13 +167,13 @@ Each task will maintain the same professional structure, evaluation depth, and d
 
 *Shree Abiraami M*
 Machine Learning Engineer & Python Developer
-CODSOFT ML Intern
+CODSOFT Machine Learning Intern
 
 ---
 
 ## 📄 License
 
 This repository is created for **educational and internship evaluation purposes**.
-The codebase is modular, well-documented, and structured to reflect production-oriented ML workflows.
+The codebase is structured to reflect **production-oriented machine learning workflows** and best practices.
 
 ---
